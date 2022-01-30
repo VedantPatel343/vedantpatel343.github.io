@@ -2,110 +2,148 @@
 <html>
 
 <head>
-    <title>
-        BCA 1st Sem
-    </title>
-    <style>
-        body {
-            background-color: darkslateblue
-        }
-
-        header {
-            text-align: center;
-            background-color: darkgoldenrod;
-        }
-
-        h1 {
-            color: rgb(88, 22, 88);
-            font-size: 45px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        p#a {
-            font-size: 30px;
-            color: lightpink;
-            text-align: center;
-            font-family: cursive;
-        }
-
-        p#b {
-            font-size: 28px;
-            color: khaki;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        li {
-            padding: 10px;
-        }
-
-        a {
-            color: tomato;
-        }
-
-        a:hover {
-            color: magenta;
-        }
-
-        a:active {
-            color: darkviolet;
-        }
-
-        small {
-            color: white;
-        }
-
-        div {
-            color: palegreen;
-            font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-    </style>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
-    <header>
-        <h1>This is Lab 5</h1>
-    </header>
-    <p id="a">
-        Here we are playing with <b><abbr title="Cascading Style Sheets">CSS</abbr></b>
-    </p>
+    <!-- <img src="/images/secruity_banner_/2.png" alt="Banner" id="banner"> -->
+    <h1>--: Security Week Registration Form :--</h1>
+    <img src="/images/Cyber-Security_image.png" alt="image" id="image">
 
-    <br>
-
-    <p id="b">
-        This is List of some Awsome Quotes given by Great Peoples:-
-    </p>
-
-    <div>
-        <ul>
-            <li>"It is very easy to Defeat someone, but it is very hard to Win someone." <small>--Dr. A. P. J. Abdul
-                    Kalam</small></li>
-            <li>"You see, God helps only people who work hard. That principle is very clear." <small>-- Dr. A.P.J. Abdul
-                    Kalam</small></li>
-            <li>"You can do anything, but not everything." <small>--David Allen</small></li>
-            <li>"Nearly all men can stand adversity, but if you want to test a man's character, give him power."
-                <small>--Abraham Lincoln</small>
-            </li>
-            <li>"A person who never made a mistake, never tried anything new." <small>--Albert Einstein</small></li>
-            <li>"Great people are those who make others feel that they too can be great." <small>--Mark Twain</small>
-            </li>
-            <li>"If you tell the truth you don't have to remember anything." <small>--Mark Twain</small></li>
-            <li>"Understanding is simple. Knowing is complicated." <small>--Robert Fripp</small></li>
-            <li>"The more you can dream, the more you can do." <small>--Michael Korda</small></li>
-            <li>"Life will Knock us down, but we can choose weather to Stand back up." <small>--Jackei chan</small></li>
-            <li>"The only way to do great work is to love what you do." <small>--Steve Jobs</small></li>
-            <li>"We don't see things as they are. We see things as we are." <small>--Anais Nin</small></li>
-            <li>"When a person can no longer laugh at himself, it is time for others to laugh at him." <small>--Thomas
-                    Szasz</small></li>
-            <li>"The richest person is not who has the most, but who needs the least."</li>
-            <li>"Life is 10% of what happens and 90% how you react to it."</li>
-            <li>"Even if you don't like Days, there can not be always Night."</li>
-            <li>"Being Persistent is key for Success."</li>
-        </ul>
+    <div id="info">
+        About this Virtual Event:<br><br>
+        Topic: Awareness about Cyber Crime and Security<br>
+        Date: 7<sup>th</sup> May to 14<sup>th</sup> May, 2022<br>
+        Time: 9:00 AM - 1:00 PM<br>
+        Venue: Online (Link for this session will be provided further.)<br><br>
+        <span>In this virtual event, we'll talk about types of Cyber crimes <br> spread in Internet and Enterprises.
+            We'll discuss how to be safe <br> form cyber crime and how to secure our systems from this <br> cyber
+            criminal's attaks and how to give security to enterprise.<br> We'll also discuss and analize about tools
+            used in defence and <br> offence, and many more.</span>
     </div>
 
-    <br><br>
-    <a style="font-size: 22px" href="/lab-4/index.html">Lab 4</a>
+    <fieldset>
+        <legend style="text-align: center;">
+            <h3>Register here</h3>
+        </legend>
+        <form>
+            <label for="name"><b>Name:</b> </label> <input type="text" id="name" required>
+
+            <br>
+            <hr><br>
+
+            <label for="roll no"><b>Roll No.:</b> <input type="number" id="roll no" required></label>
+
+            <br>
+            <hr><br>
+
+            <b>Gender:</b>
+            <div style="margin: -20px 0 0 65px"><input type="radio" name="r1" required>Male<br>
+                <input type="radio" name="r1">Female<br>
+                <input type="radio" name="r1">Other<br>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <label for="email"><b>Email:</b> <input type="email" id="email" required></label>
+
+            <br>
+            <hr><br>
+
+            <label for="phone"><b>Phone No.:</b> <input type="number" id="phone" required></label>
+
+            <br>
+            <hr><br>
+
+            <label for="address"><b>Address:</b> </label><textarea cols="30" rows="3" id="address" required></textarea>
+
+            <br>
+            <hr><br>
+
+            <b>Postal Address:</b> <br><br>
+            <div id="pos_add" required>
+                <label for="pin code"><b>Pin Code:</b> <input type="number" id="pin code"></label><br><br>
+                <label for="state"><b>State:</b> <input type="text" id="state"
+                        style="padding-right: 28px;"></label><br><br>
+                <label for="country"><b>Country:</b> <input type="text" id="country"
+                        style="padding-right: 8px;"></label><br><br>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <b>Hobbies:</b>
+            <div style=" margin: -20px 0 0 65px;"><input type="checkbox">Reading<br>
+                <label><input type="checkbox">Writing<br></label>
+                <label><input type="checkbox">Driving<br></label>
+                <label><input type="checkbox">Gaming<br></label>
+                <label><input type="checkbox">Singing<br></label>
+                <label><input type="checkbox">Dancing<br></label>
+                <label><input type="checkbox">Travelling<br></label>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <b>Qualifications:</b>
+            <div style="margin: -20px 0 0 100px"><label><input type="radio" name="Q1">BCA<br></label><label>
+                    <label><input type="radio" name="Q1">MCA<br></label>
+                    <label><input type="radio" name="Q1">BSC<br></label>
+                    <label><input type="radio" name="Q1">MSC<br></label>
+                    <label><input type="radio" name="Q1">B.TECH<br></label>
+                    <label><input type="radio" name="Q1">M.TECH<br></label>
+                    <label><input type="radio" name="Q1">BBA<br></label>
+                    <label><input type="radio" name="Q1">MBA<br></label>
+                    <label><input type="radio" name="Q1">B.COM<br></label>
+                    <label><input type="radio" name="Q1">M.COM<br></label>
+            </div>
+
+            <br>
+            <hr><br>
+
+            <label for="states"><b>State:</b> <select value="City" id="states">
+                    <option>Select</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>Gairsain</option>
+                    <option>West Bengal</option>
+                </select></label>
+            <br>
+            <hr><br>
+
+            <div id="button">
+                <input type="submit" id="btn" onmouseout="hoverout()" onmouseover="hover()">
+                <input type="reset" id="something" onmouseover="dothis()" onmouseout="out()">
+            </div>
+        </form>
+    </fieldset>
 </body>
 
 </html>
