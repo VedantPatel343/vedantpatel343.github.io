@@ -25,6 +25,15 @@ legend{
     padding: 5px;
 }
 
+a{
+    font-size: 25px;
+}
+
+a:hover{
+    color: orange;
+    font-family: cursive;
+}
+
 #result{
     font-size: 25px;
     color: orangered;
