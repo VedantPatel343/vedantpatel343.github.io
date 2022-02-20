@@ -21,10 +21,14 @@ h1{
 fieldset{
     color: palegreen;
 }
-/* img#banner{
-    width: 1250px;
-    height: 130px;
-} */
+a{
+    color: red;
+    font-size: 30px;
+    padding: 2px;
+}
+a:hover{
+    color: greenyellow;
+}
 #fieldset1{
     overflow: hidden;
     border-radius: 15px;
