@@ -1,0 +1,31 @@
+body{
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: darkred;
+    font-size: 50px;
+}
+
+legend{
+    text-align: center;
+    font-size: 25px;
+    color: orangered;
+}
+
+#para{
+    font-size: 20px;
+    color: gold;
+}
+
+.button{
+    margin-right: 20px;
+    padding: 5px;
+}
+
+#result{
+    font-size: 25px;
+    color: orangered;
+}
